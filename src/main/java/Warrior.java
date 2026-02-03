@@ -7,15 +7,15 @@ public class Warrior extends Character {
     }
 
     public void performHeavyAttack(Character target) {
-
+        target.receiveDamage(this.strength);
     }
 
     public void enterBerserkMode() {
-
+        this.status = Status.FURIOUS;
     }
 
     public int getStrength() {
-        return 0;
+        return this.strength;
     }
 
 
